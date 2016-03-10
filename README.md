@@ -13,6 +13,7 @@ sample for yaf(Yet Another Framework)
   - download source code from https://github.com/yangzhenping/yafsample.git
   - copy to your website folder
   - lanuch web browser and go to http://yourhostname/sample/index.php/Index/index/index/name/nonStranger?get=my%20filled%20value
+  - It means: http://yourhostname/sample/index.php/ModuleName/ControllerName/ActionName/indexActionFunctionVar1/indexActionFunctionVar1_Value?QueryStringName=QueryStringNameValue
 
   - It will shows as below:
   - Call _initConfig in Bootstrap
@@ -44,7 +45,6 @@ sample for yaf(Yet Another Framework)
 ----
 
 MIT
-
 
 
 

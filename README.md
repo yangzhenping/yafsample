@@ -40,6 +40,36 @@ sample for yaf(Yet Another Framework)
   - I am nonStranger
   - output:test:my filled value
 
+##Others
+
+###Enable .htaccess file:
+https://help.ubuntu.com/community/EnablingUseOfApacheHtaccessFiles
+
+###Cannot find "/etc/apache2/sites-available/default"?
+  - http://askubuntu.com/questions/421233/enabling-htaccess-file-to-rewrite-path-not-working
+
+###Apache log location?
+  - http://askubuntu.com/questions/14763/where-are-the-apache-and-php-log-files
+  - http://ask.xmodulo.com/apache-error-log-location-linux.html
+
+###.htaccess: "Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration"?
+  - http://stackoverflow.com/questions/10144634/htaccess-invalid-command-rewriteengine-perhaps-misspelled-or-defined-by-a-m
+
+###Removing index.php from URLs
+  - http://httpd.apache.org/docs/2.0/misc/rewriteguide.html
+  - #.htaccess
+  -         RewriteEngine On
+  -         RewriteBase /
+  - 
+  -         # Directs all EE web requests through the site index file
+  -         RewriteCond %{REQUEST_FILENAME} !-f
+  -         RewriteCond %{REQUEST_FILENAME} !-d
+  -         RewriteRule ^(.*)$ /sample/index.php/$1 [L]
+  - #.htaccess
+  - 
+  - http://st-ub14x64-01/sample/index.php/Index/Login/Index
+  - Use http://st-ub14x64-01/sample/Index/Login/Index same as above
+
 ### License
 
 ----

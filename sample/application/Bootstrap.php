@@ -25,6 +25,13 @@ class Bootstrap extends Yaf_Bootstrap_Abstract{
 
 	public function _initRoute(Yaf_Dispatcher $dispatcher) {
 		echo "Call _initRoute in Bootstrap<br>";
+		Yaf_Dispatcher::getInstance()->getRouter()->addRoute(
+		             "supervar",new Yaf_Route_Supervar("r")
+		       );
+		Yaf_Dispatcher::getInstance()->getRouter()->addRoute(
+				            "simple", new Yaf_Route_simple('m', 'c', 'a')
+				         );
+		
 		//åœ¨è¿™é‡Œæ³¨å†Œè‡ªå·±çš„è·¯ç”±å��è®®,é»˜è®¤ä½¿ç”¨ç®€å�•è·¯ç”±
 	}
 	

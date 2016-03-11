@@ -76,7 +76,7 @@ sample for yaf(Yet Another Framework)
   - 
   - http://st-ub14x64-01/sample/Login/index
   - http://st-ub14x64-01/sample/Login same as above when indexAction in LoginController
-  - Inside indexAction in LoginController, here hide have module name 'Index/' before LoginController 
+  - Inside indexAction in LoginController, here hide module name 'Index/' before LoginController 
 
 ### License
 

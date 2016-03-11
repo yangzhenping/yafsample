@@ -23,7 +23,7 @@ class LoginController extends Yaf_Controller_Abstract {
 // 		Yaf_Dispatcher::getInstance()->disableView();
 // 		$this->initView();
 		$routes = Yaf_Dispatcher::getInstance()->getRouter()->getRoutes();
-		     	print_r($routes);
+		print_r($routes);
 		
 		echo "Outside indexAction in LoginController<br>";
 		

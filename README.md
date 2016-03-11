@@ -43,7 +43,7 @@ sample for yaf(Yet Another Framework)
 ##Others
 
 ###Enable .htaccess file:
-https://help.ubuntu.com/community/EnablingUseOfApacheHtaccessFiles
+  - https://help.ubuntu.com/community/EnablingUseOfApacheHtaccessFiles
 
 ###Cannot find "/etc/apache2/sites-available/default"?
   - http://askubuntu.com/questions/421233/enabling-htaccess-file-to-rewrite-path-not-working
@@ -67,8 +67,16 @@ https://help.ubuntu.com/community/EnablingUseOfApacheHtaccessFiles
   -         RewriteRule ^(.*)$ /sample/index.php/$1 [L]
   - #.htaccess
   - 
-  - http://st-ub14x64-01/sample/index.php/Index/Login/Index
-  - Use http://st-ub14x64-01/sample/Index/Login/Index same as above
+  - http://st-ub14x64-01/sample/index.php/Index/Index/Index
+  - http://st-ub14x64-01/sample/Index/Index/Index same as above
+  - Inside indexAction in IndexController
+  - 
+  - http://st-ub14x64-01/sample/Index/Login/Index
+  - Inside indexAction in LoginController, first Index is the default module name.
+  - 
+  - http://st-ub14x64-01/sample/Login/index
+  - http://st-ub14x64-01/sample/Login same as above when indexAction in LoginController
+  - Inside indexAction in LoginController, here hide have module name 'Index/' before LoginController 
 
 ### License
 
